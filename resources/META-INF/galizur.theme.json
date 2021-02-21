@@ -1,0 +1,318 @@
+{
+    "name"         : "Galizur",
+    "dark"         : true,
+    "author"       : "Raziel Anarki <razielanarki@semmi.se>",
+    "editorScheme" : "/META-INF/galizur.scheme.xml",
+    "background" :
+    {
+        "image"        : "/META-INF/minds-eye-1x.svg",
+        "transparency" : 7,
+        "fill"         : "plain",
+        "anchor"       : "bottom_right"
+    },
+    "emptyFrameBackground" :
+    {
+        "image"        : "/META-INF/minds-eye-4x.svg",
+        "transparency" : 17,
+        "fill"         : "scale",
+        "anchor"       : "center"
+    },
+    "icons" :
+    {
+        "ColorPalette" :
+        {
+            "Actions.Red"             : "#aa1122",
+            "Actions.Yellow"          : "#aa9911",
+            "Actions.Green"           : "#11aa33",
+            "Actions.Blue"            : "#1177aa",
+            "Actions.Grey"            : "#888999",
+            "Actions.GreyInline.Dark" : "#777888",
+
+            "Objects.Grey"         : "#aaabbb",
+            "Objects.Blue"         : "#3399cc",
+            "Objects.Green"        : "#22cc44",
+            "Objects.Yellow"       : "#ccaa33",
+            "Objects.Purple"       : "#9933cc",
+            "Objects.Pink"         : "#cc3399",
+            "Objects.Red"          : "#cc3344",
+            "Objects.RedStatus"    : "#aa1122",
+            "Objects.YellowDark"   : "#aa9911",
+            "Objects.GreenAndroid" : "#33aa11",
+            "Objects.BlackText"    : "#333444",
+
+            "Tree.iconColor" : "#778899"
+        }
+    },
+    "colors" :
+    {
+        "panelDark" : "#2a2c2e",
+        "panelDim"  : "#313337",
+        "panelAlt"  : "#333444",
+        "panel"     : "#3a3c3e",
+        "panelLit"  : "#414347",
+
+        "text"         : "#aaabbb",
+        "textSelected" : "#99aacc",
+        "textDisabled" : "#666777",
+        "textMatched"  : "#ccaa11",
+
+        "infoLabel"    : "#888999",
+        "errorLabel"   : "#993355",
+        "changedLabel" : "#335599",
+
+        "selection"         : "#225599",
+        "selectionAlt"      : "#334455",
+        "selectionInactive" : "#223355",
+
+        "focusHover"  : "#333444",
+        "focusBorder" : "#225577",
+        "focus"       : "#225599",
+
+        "errorBackground" : "#553344",
+        "errorBorder"     : "#772244",
+        "errorFocus"      : "#992244",
+
+        "warningBackground" : "#554433",
+        "warningBorder"     : "#774422",
+        "warningFocus"      : "#994422",
+
+        "button"            : "#445566",
+        "buttonBorder"      : "#667788",
+        "blueButton"        : "#2244aa",
+        "blueButtonBorder"  : "#3377cc",
+        "greenButton"       : "#007744",
+        "greenButtonBorder" : "#33aa66",
+
+        "activeTab"     : "#3a3c4e",
+        "tabLine"       : "#555666",
+        "activeTabLine" : "#3377aa",
+
+        "fileBlue"   : "#333944",
+        "fileGreen"  : "#334439",
+        "fileOrange" : "#443933",
+        "fileRose"   : "#443339",
+        "fileViolet" : "#393344",
+        "fileYellow" : "#444433",
+
+        "link"       : "#3377cc",
+        "linkAlt"    : "#558899",
+        "linkHover"  : "#3399ff",
+        "linkActive" : "#992244",
+
+        "progress"        : "#1155aa",
+        "progressEnd"     : "#3377cc",
+        "progressPass"    : "#007733",
+        "progressPassEnd" : "#33aa66",
+        "progressFail"    : "#aa1144",
+        "progressFailEnd" : "#cc3366",
+
+        "treeHash" : "#444555",
+
+        "memUsed"  : "#117755",
+        "memAlloc" : "#773355"
+    },
+    "ui":
+    {
+        "*" :
+        {
+            "background"         : "panel",
+            "foreground"         : "text",
+            "disabledForeground" : "textDisabled",
+            "disabledText"       : "textDisabled",
+
+            "selectionBackground"         : "selection",
+            "selectionForeground"         : "textSelected",
+            "selectionInactiveBackground" : "selectionInactive",
+            "selectionInactiveForeground" : "textDisabled"
+        },
+        "Button" :
+        {
+            "startBackground"    : "button",
+            "endBackground"      : "button",
+            "startBorderColor"   : "buttonBorder",
+            "endBorderColor"     : "buttonBorder",
+
+            "default" :
+            {
+                "startBackground"    : "blueButton",
+                "endBackground"      : "blueButton",
+                "startBorderColor"   : "blueButtonBorder",
+                "endBorderColor"     : "blueButtonBorder"
+            }
+        },
+        "CompletionPopup":
+        {
+            "matchForeground": "textMatched"
+        },
+        "Component" :
+        {
+            "infoForeground"            : "infoLabel",
+            "focusColor"                : "focus",
+            "focusedBorderColor"        : "focusBorder",
+            "errorFocusColor"           : "errorFocus",
+            "inactiveErrorFocusColor"   : "errorBorder",
+            "warningFocusColor"         : "warningFocus",
+            "inactiveWarningFocusColor" : "warningBorder"
+        },
+        "Counter" :
+        {
+            "foreground" : "text",
+            "background" : "focus"
+        },
+        "DefaultTabs" :
+        {
+            "hoverBackground"         : "focusHover",
+            "inactiveUnderlineColor"  : "tabLine",
+            "underlinedTabBackground" : "activeTab",
+            "underlineColor"          : "activeTabLine"
+        },
+        "EditorTabs":
+        {
+            "inactiveColoredFileBackground" : "#00000000",
+            "underlinedTabBackground"       : "activeTab"
+        },
+        "FileColor":
+        {
+            "Blue"   : "fileBlue",
+            "Green"  : "fileGreen",
+            "Orange" : "fileOrange",
+            "Rose"   : "fileRose",
+            "Violet" : "fileViolet",
+            "Yellow" : "fileYellow"
+        },
+        "Label" :
+        {
+            "disabledText"       : "textDisabled",
+            "disabledForeground" : "textDisabled",
+            "infoForeground"     : "infoLabel",
+            "errorForeground"    : "errorLabel"
+        },
+        "Link" :
+        {
+            "secondaryForeground" : "linkAlt",
+            "activeForeground"    : "link",
+            "visitedForeground"   : "link",
+            "hoverForeground"     : "linkHover",
+            "pressedForeground"   : "linkActive"
+        },
+        "MemoryIndicator" :
+        {
+            "usedBackground"      : "memUsed",
+            "allocatedBackground" : "memAlloc"
+        },
+        "List" :
+        {
+            "background": "panelDim"
+        },
+        "Plugins" :
+        {
+            "background"               : "panelDim",
+            "SearchField.background"   : "panelDark",
+            "lightSelectionBackground" : "selectionAlt",
+            "hoverBackground"          : "focusHover",
+            "tagForeground"            : "text",
+            "tagBackground"            : "focus",
+            "eapTagBackground"         : "warningFocus",
+            "Button":
+            {
+                "installForeground"     : "greenButtonBorder",
+                "installFillBackground" : "greenButton",
+                "updateBackground"      : "blueButton",
+                "updateBorderColor"     : "blueButton"
+            }
+        },
+        "ProgressBar" :
+        {
+            "progressColor"           : "progress",
+            "indeterminateStartColor" : "progress",
+            "indeterminateEndColor"   : "progressEnd",
+            "failedColor"             : "progressFail",
+            "failedEndColor"          : "progressFailEnd",
+            "passedColor"             : "progressPass",
+            "passedEndColor"          : "progressPassEnd"
+        },
+        "SearchEverywhere" :
+        {
+            "Header.background": "panelDim",
+            "Tab.selectedBackground" : "selectionAlt",
+            "SearchField.background" : "panelDark",
+            "SearchField.infoForeground": "infoLabel",
+            "Advertiser.foreground": "infoLabel"
+        },
+        "SearchField":
+        {
+            "errorBackground": "errorBackground"
+        },
+        "SearchMatch":
+        {
+            "startBackground" : "textMatched",
+            "endBackground"   : "textMatched"
+        },
+        "SidePanel" :
+        {
+            "background" : "panelAlt"
+        },
+        "TabbedPane" :
+        {
+            "contentAreaColor" : "panelDim"
+        },
+        "Table" :
+        {
+            "background"               : "panelDim",
+            "stripeColor"              : "panelDark",
+            "alternativeRowBackground" : "panelDark",
+            "lightSelectionBackground" : "selectionAlt",
+            "hoverBackground"          : "focusHover"
+        },
+        "TableHeader" :
+        {
+            "background"           : "panelLit",
+            "bottomSeparatorColor" : "panelDark"
+        },
+        "TextField" :
+        {
+            "background" : "panelLit"
+        },
+        "Tree" :
+        {
+            "background"      : "panelDim",
+            "hash"            : "treeHash",
+            "hoverBackground" : "focusHover",
+
+            "errorForeground"        : "errorLabel",
+            "modifiedItemForeground" : "changedLabel"
+        },
+        "ToolWindow" :
+        {
+            "Header" :
+            {
+                "background" : "selectionAlt"
+            }
+        },
+        "ValidationTooltip" :
+        {
+            "errorBackground"   : "errorBackground",
+            "errorBorderColor"  : "errorBorder",
+            "warningBackground" : "warningBackground",
+            "warningBorderColor": "warningBorder"
+        },
+        "VersionControl" :
+        {
+            "FileHistory.Commit.selectedBranchBackground" : "selectionAlt",
+            "Log.Commit" :
+            {
+                "currentBranchBackground" : "selectionAlt",
+                "hoveredBackground"       : "focusHover"
+            }
+        },
+        "WelcomeScreen" :
+        {
+            "SidePanel.background" : "panelAlt",
+            "Projects" :
+            {
+                "selectionBackground" : "selectionAlt",
+                "actions.background"  : "selectionAlt"
+            }
+        }
+    }
+}

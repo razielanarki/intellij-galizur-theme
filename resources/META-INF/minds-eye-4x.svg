@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 0 99 111" width="1000" height="1000">
+    <defs>
+        <rect id="f" height="100" width="100" />
+        <mask id="mr"><use xlink:href="#f" fill="#000" /><rect height="100" width="50" fill="#fff" /></mask>
+        <mask id="ml"><use xlink:href="#f" fill="#fff" /><rect height="100" width="50" fill="#000" /></mask>
+        <mask id="mt"><use xlink:href="#f" fill="#000" /><rect height="50" width="100" fill="#fff" /></mask>
+        <mask id="mb"><use xlink:href="#f" fill="#fff" /><rect height="50" width="100" fill="#000" /></mask>
+        <mask id="mh">
+            <use xlink:href="#f" fill="#fff" />
+            <ellipse cx="50" cy="50" rx="12" ry="8" fill="#000" />
+        </mask>
+        <g id="r" stroke="#fff" stroke-width="1.73">
+            <ellipse cx="50" cy="50" rx="18" ry="12" mask="url(#mh)" />
+            <ellipse cx="50" cy="50" rx="12" ry="07" fill="none" />
+        </g>
+        <line id="s" y1="48" y2="52" stroke="#fff" stroke-width="1.73" />
+        <g id="i"><circle cx="50" cy="50" r="3.33" fill="none" stroke="#fff" stroke-width="1.73" /></g>
+        <linearGradient id="gtl"><stop offset="0.50" stop-color="#000" /><stop offset="0.98" stop-color="#fff" /></linearGradient>
+        <linearGradient id="gbr"><stop offset="0.02" stop-color="#fff" /><stop offset="0.50" stop-color="#000" /></linearGradient>
+        <linearGradient id="gbl"><stop offset="0.50" stop-color="#000" /><stop offset="0.82" stop-color="#fff" /></linearGradient>
+        <linearGradient id="gtr"><stop offset="0.18" stop-color="#fff" /><stop offset="0.50" stop-color="#000" /></linearGradient>
+        <mask id="me">
+            <use xlink:href="#r" y="-2.5" mask="url(#ml)" fill="#fff"/>
+            <use xlink:href="#r" y=" 2.5" mask="url(#mr)" fill="#fff"/>
+            <g mask="url(#mt)">
+                <use xlink:href="#r" y="-2.5" mask="url(#ml)" fill="url('#gtl')"/>
+                <use xlink:href="#r" y=" 2.5" mask="url(#mr)" fill="url('#gtr')"/>
+            </g>
+            <g mask="url(#mb)">
+                <use xlink:href="#r" y="-2.5" mask="url(#ml)" fill="url('#gbl')"/>
+                <use xlink:href="#r" y=" 2.5" mask="url(#mr)" fill="url('#gbr')"/>
+            </g>
+            <use xlink:href="#s" x="32"/>
+            <use xlink:href="#s" x="68"/>
+            <use xlink:href="#r" y="-2.5" mask="url(#mr)" fill="#000" />
+            <use xlink:href="#r" y=" 2.5" mask="url(#ml)" fill="#000"/>
+            <use xlink:href="#i" />
+        </mask>    
+    </defs>
+    <use xlink:href="#f" fill="#102" mask="url(#me)"/>
+</svg>

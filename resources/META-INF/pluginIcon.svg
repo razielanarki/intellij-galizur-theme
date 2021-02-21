@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 40 40" width="32" height="32">
+    <mask id="mask">
+        <circle fill="#fff" cx="20" cy="27" r="16" />
+    </mask>
+    <circle fill="#f71" cx="20" cy="20" r="18" />
+    <g mask="url(#mask)">
+        <circle fill="#fff" cx="20" cy="13" r="16" />
+        <g transform="rotate(37 20 20)">
+            <circle fill="#3a7" cx="20" cy="20" r="6.66" />
+            <ellipse fill="#fff" cx="20" cy="11" rx="3.33" ry="7.77" opacity="0.737" />
+            <circle fill="#123" cx="20" cy="20" r="3.73" />
+            <ellipse fill="#fff" cx="20" cy="17.37" rx="1.337" ry="0.737" />
+        </g>
+    </g>
+</svg>
