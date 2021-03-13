@@ -1,14 +1,20 @@
-# Galizur<image width="137" align="right" src="resources/META-INF/pluginIcon.svg" />
+# Galizur <img width="137" alt="Galizur's rye Icon" align="right" src="resources/META-INF/pluginIcon.svg" />
+
 
 A dark color scheme and matching UI theme  for **IntellIJ IDE**-s.
 
-**[Plugin Homepage][plugin]**
+[Plugin Homepage][plugin]
 
 ## Description
 
 A hand-crafted dark color scheme and matching UI theme, similar to the default "Darcula", with more magickally vibrant colors, _witch_ almost exclusively are short **_Hex Codes_**.
 
 ## Version History
+
+### _1.1.0_
+
+- Missing UI theme customizations added.
+- Fine-tuning of editor color scheme, customizations for more languages added
 
 ### _1.0.0_
 

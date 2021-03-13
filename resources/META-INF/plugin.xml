@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>ent.brainstorm.galizur.theme</id>
     <name>Galizur Theme</name>
-    <version>1.0.0</version>
+    <version>1.1.0</version>
     <vendor email="razielanarki@semmi.se" url="https://github.com/razielanarki">Raziel Anarki</vendor>
 
     <description><![CDATA[
@@ -11,27 +11,33 @@
 
 <p><a href="https://github.com/razielanarki/intellij-galizur-theme">Project GitHUB page</a></p>
 
-<h3>Screenshots</h3>
+<h2>Screenshots</h2>
 
 <h4>Settings Window</h4>
-<p><a src="https://github.com/razielanarki/intellij-galizur-theme/raw/main/screenshots/settings.png" target="_blank"><img src="https://github.com/razielanarki/intellij-galizur-theme/raw/main/screenshots/settings.png" alt="Settings window" width="666" /></a></p>
+<p><a href="https://github.com/razielanarki/intellij-galizur-theme/raw/main/screenshots/settings.png" target="_blank"><img src="https://github.com/razielanarki/intellij-galizur-theme/raw/main/screenshots/settings.png" alt="Settings window" width="666" /></a></p>
 
 <h4>GO template in HTML</h4>
-<p><a src="https://github.com/razielanarki/intellij-galizur-theme/raw/main/screenshots/gotemplate.png" target="_blank"><img src="https://github.com/razielanarki/intellij-galizur-theme/raw/main/screenshots/gotemplate.png" alt="GO template in HTML" width="666" /></a></p>
+<p><a href="https://github.com/razielanarki/intellij-galizur-theme/raw/main/screenshots/gotemplate.png" target="_blank"><img src="https://github.com/razielanarki/intellij-galizur-theme/raw/main/screenshots/gotemplate.png" alt="GO template in HTML" width="666" /></a></p>
 
 <h4>Dockerfile</h4>
-<p><a src="https://github.com/razielanarki/intellij-galizur-theme/raw/main/screenshots/dockerfile.png" target="_blank"><img src="https://github.com/razielanarki/intellij-galizur-theme/raw/main/screenshots/dockerfile.png" alt="Dockerfile" width="666" /></a></p>
+<p><a href="https://github.com/razielanarki/intellij-galizur-theme/raw/main/screenshots/dockerfile.png" target="_blank"><img src="https://github.com/razielanarki/intellij-galizur-theme/raw/main/screenshots/dockerfile.png" alt="Dockerfile" width="666" /></a></p>
 
 <h4>Shell script</h4>
-<p><a src="https://github.com/razielanarki/intellij-galizur-theme/raw/main/screenshots/shell.png" target="_blank"><img src="https://github.com/razielanarki/intellij-galizur-theme/raw/main/screenshots/shell.png" alt="Shell script" width="666" /></a></p>
+<p><a href="https://github.com/razielanarki/intellij-galizur-theme/raw/main/screenshots/shell.png" target="_blank"><img src="https://github.com/razielanarki/intellij-galizur-theme/raw/main/screenshots/shell.png" alt="Shell script" width="666" /></a></p>
 
 <h1>License</h1>
 <p>Copyright © 2021 Raziel Anarki</p>
-<p>This project is licensed under the <a ref="https://github.com/razielanarki/intellij-galizur-theme/blob/main/LICENSE.md">MIT license</a>.</p>
+<p>This project is licensed under the <a href="https://github.com/razielanarki/intellij-galizur-theme/blob/main/LICENSE.md">MIT license</a>.</p>
 
     ]]></description>
 
     <change-notes><![CDATA[
+
+<h3>1.1.0</h3>
+<ul>
+    <li>Missing UI theme customizations added.</li>
+    <li>Fine-tuning of editor color scheme, customizations for more languages added</li>
+</ul>
 
 <h3>1.0.0</h3>
 <ul>
@@ -39,7 +45,7 @@
     <li><strong>Python</strong> support.</li>
     <li><strong>.properties</strong> support.</li>
     <li><strong>Makefiles</strong> support.</li>
-    <li><strong>Rainbow Brackets</strong> support.</li>
+    <li><a href="https://plugins.jetbrains.com/plugin/10080-rainbow-brackets">Rainbow Brackets</a> support.</li>
     <li>Adjusted ANSI console theme</li>
     <li>Tweaked file status colors.</li>
 </ul>
