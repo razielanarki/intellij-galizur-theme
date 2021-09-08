@@ -1,6 +1,6 @@
 **_Galizur_** is licensed under the **_MIT License_**
 =============================================================================
-### Copyright &copy; 2021 Raziel Anarki
+### Copyright &copy; 2021 **Raziel Anarki**
 
 Permission is hereby granted, free of charge,  to any person obtaining a copy
 of this software and associated documentation files (the “Software”), to deal
