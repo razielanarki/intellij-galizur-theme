@@ -12,7 +12,10 @@ The included terminal color scheme is available from&emsp;&raquo;&ensp;[mbadolat
 
 ## Version History
 
-- ### version 1.2.1 (latest)
+- ### version 1.2.2 (latest)
+  - Fixed the vertical editor scrollbar track transparency
+
+- ### version 1.2.1
   - Update UI theme to support 𝗜𝗗𝗘𝗔 𝟮𝟬𝟮𝟭.𝟮
   - Fine- and re-tuning of editor color scheme
   - Updated plugin icon style

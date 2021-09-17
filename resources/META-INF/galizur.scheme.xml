@@ -1,9 +1,9 @@
 <scheme name="Galizur" version="142" parent_scheme="Darcula">
   <metaInfo>
-    <property name="created">2021-08-09T11:11:11</property>
+    <property name="created">2021-09-09T11:11:11</property>
     <property name="ide">idea</property>
     <property name="ideVersion">2021.2.5080.92</property>
-    <property name="modified">2021-08-02T11:11:11</property>
+    <property name="modified">2021-09-09T11:11:11</property>
   </metaInfo>
   <colors>
     <option name="ADDED_LINES_COLOR" value="447755" />
@@ -83,19 +83,19 @@
     <option name="ScrollBar.Mac.Transparent.hoverThumbColor" value="6688aa66" />
     <option name="ScrollBar.Mac.Transparent.hoverTrackColor" value="22233344" />
     <option name="ScrollBar.Mac.Transparent.thumbColor" value="6688aa33" />
-    <option name="ScrollBar.Mac.Transparent.trackColor" value="6688aa0" />
+    <option name="ScrollBar.Mac.Transparent.trackColor" value="6688aa00" />
     <option name="ScrollBar.Mac.hoverThumbColor" value="6688aa66" />
     <option name="ScrollBar.Mac.hoverTrackColor" value="22233344" />
     <option name="ScrollBar.Mac.thumbColor" value="6688aa33" />
-    <option name="ScrollBar.Mac.trackColor" value="6688aa0" />
+    <option name="ScrollBar.Mac.trackColor" value="6688aa00" />
     <option name="ScrollBar.Transparent.hoverThumbColor" value="6688aa66" />
     <option name="ScrollBar.Transparent.hoverTrackColor" value="22233344" />
     <option name="ScrollBar.Transparent.thumbColor" value="6688aa33" />
-    <option name="ScrollBar.Transparent.trackColor" value="6688aa0" />
+    <option name="ScrollBar.Transparent.trackColor" value="6688aa00" />
     <option name="ScrollBar.hoverThumbColor" value="6688aa66" />
     <option name="ScrollBar.hoverTrackColor" value="22233344" />
     <option name="ScrollBar.thumbColor" value="6688aa33" />
-    <option name="ScrollBar.trackColor" value="6688aa0" />
+    <option name="ScrollBar.trackColor" value="6688aa00" />
     <option name="TABS" value="334455" />
     <option name="TAB_UNDERLINE" value="3377aa" />
     <option name="TAB_UNDERLINE_INACTIVE" value="3377aa" />
