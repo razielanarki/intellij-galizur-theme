@@ -7,10 +7,10 @@
     {
         "ColorPalette" :
         {
-            "Actions.Red"             : "#991122",
-            "Actions.Yellow"          : "#998811",
+            "Actions.Red"             : "#aa1122",
+            "Actions.Yellow"          : "#aa8811",
             "Actions.Green"           : "#119933",
-            "Actions.Blue"            : "#117799",
+            "Actions.Blue"            : "#1177aa",
             "Actions.Grey"            : "#8899aa",
             "Actions.GreyInline"      : "#667788",
             "Actions.GreyInline.Dark" : "#aabbcc",
@@ -60,9 +60,9 @@
         "panelAlt"     : "#333444",
         "panel"        : "#3a3c3e",
         "panelLit"     : "#414347",
+        "panelTools"   : "#334455",
 
             "panelDeep"  : "#2a2c3e",
-            "panelTools" : "#334455",
             "panelTool"  : "#223344",
 
         "borderDark" : "#212327",
@@ -80,10 +80,12 @@
         "inputLit"      : "#777888",
 
         "caret"         : "#ccaa77",
+
+        "textDim"       : "#888999",
         "text"          : "#aabbcc",
         "textSelected"  : "#aaccee",
 
-        "labelInactive" : "#666777",
+        "labelDisabled" : "#666777",
         "labelInfo"     : "#778899",
         "labelHotkey"   : "#6688aa",
         "label"         : "#aaabbb",
@@ -91,7 +93,7 @@
         "labelTag"      : "#aaccee",
 
         "labelChanged"  : "#3377cc",
-        "labelError"    : "#aa1133",
+        "labelError"    : "#cc1133",
         "labelMatch"    : "#ccaa33",
         "labelSuccess"  : "#33aa66",
 
@@ -99,7 +101,8 @@
         "selectionAlt"         : "#224455",
         "selectionInactive"    : "#223355",
         "selection"            : "#225599",
-        "hoverAlt"             : "#223344",
+        "hoverAltDim"          : "#223344",
+        "hoverAlt"             : "#113344",
 
             "hoverDark" : "#2a2c3e",
             "hoverDim"  : "#2c2e33",
@@ -126,10 +129,15 @@
         "warningBorder"     : "#884422",
         "warningFocus"      : "#aa5522",
 
-        "successDark"       : "#114422",
+        "successDark"       : "#004422",
         "successBackground" : "#115533",
         "successBorder"     : "#227755",
         "successFocus"      : "#229977",
+
+        "markedDark"       : "#443300",
+        "markedBackground" : "#554411",
+        "markedBorder"     : "#776622",
+        "markedFocus"      : "#997733",
 
         "button"            : "#445566",
         "buttonBorder"      : "#667788",
@@ -143,12 +151,13 @@
         "activeTab"   : "#3377aa",
 
         "tag"    : "#2266aa",
+        "state"  : "#228866",
         "tagAlt" : "#992255",
 
-        "link"       : "#3399ff",
-        "linkHover"  : "#3377aa",
-        "linkAlt"    : "#33aa77",
-        "linkActive" : "#662244",
+        "link"       : "#3377cc",
+        "linkHover"  : "#3399ff",
+        "linkAlt"    : "#33cc77",
+        "linkActive" : "#aa3377",
 
         "progress"        : "#3366aa",
         "progressEnd"     : "#44aacc",
@@ -177,8 +186,11 @@
         "dropBorder"     : "#33557799",
         "dropForeground" : "#6699ccaa",
 
-        "mnemonicKey"    : "#335566",
-        "mnemonicnumber" : "#997733"
+        "mnemonicKey" : "#335566",
+        "mnemonicTxt" : "#aabbcc",
+        "mnemonicNum" : "#997733",
+
+        "invisible"   : "#00000000"
     },
     "ui" :
     {
@@ -191,9 +203,9 @@
             "infoForeground"                 : "labelInfo",
             "textForeground"                 : "labelInfo",
 
-            "disabledForeground"             : "labelInactive",
-            "disabledText"                   : "labelInactive",
-            "inactiveForeground"             : "labelInactive",
+            "disabledForeground"             : "labelDisabled",
+            "disabledText"                   : "labelDisabled",
+            "inactiveForeground"             : "label",
 
             "inactiveBackground"             : "panel",
             "textBackground"                 : "panel",
@@ -210,7 +222,7 @@
 
             "selectionForeground"            : "textSelected",
             "selectionBackground"            : "selection",
-            "selectionInactiveForeground"    : "labelInactive",
+            "selectionInactiveForeground"    : "label",
             "selectionInactiveBackground"    : "selectionInactive",
 
             "messageForeground"              : "labelInfo",
@@ -228,38 +240,34 @@
             "pressedBackground"  : "panelDim",
             "pressedBorderColor" : "panelDim"
         },
-        "AssignedMnemonic" :
-        {
-            "foreground"  : "mnemonicNumber",
-            "background"  : "mnemonicKey",
-            "borderColor" : "border"
-        },
-        "AvailableMnemonic" :
-        {
-            "foreground"  : "labelInactive",
-            "background"  : "panelDark",
-            "borderColor" : "border"
-        },
-        "CurrentMnemonic" :
-        {
-            "foreground"  : "mnemonicNumber",
-            "background"  : "focusDark",
-            "borderColor" : "border"
-        },
-        "MnemonicIcon" :
-        {
-            "foreground"  : "mnemonicNumber",
-            "background"  : "mnemonicKey",
-            "borderColor" : "border"
-        },
         "BigSpinner" :
         {
             "background" : "panelMenu"
         },
-        "BookmarkIcon" :
+        "Bookmark" :
         {
-            "background" : "panelMenu"
+            "iconBackground"    : "mnemonicKey",
+            "Mnemonic" :
+            {
+                "iconForeground" : "label"
+            },
+            "MnemonicAssigned" :
+            {
+                "foreground" : "mnemonicTxt",
+                "background" : "mnemonicKey"
+            },
+            "MnemonicAvailable" :
+            {
+                "foreground" : "labelDisabled",
+                "background" : "panelDark"
+            },
+            "MnemonicCurrent" :
+            {
+                "foreground" : "mnemonicNum",
+                "background" : "focusDark"
+            }
         },
+
         "Borders" :
         {
             "color"               : "borderDeep",
@@ -277,7 +285,7 @@
             "background"          : "panel",
 
             "disabledBorderColor" : "inputDisabled",
-            "disabledText"        : "labelInactive",
+            "disabledText"        : "labelDisabled",
 
             "shadowColor"         : "buttonShade",
             "shadowWidth"         : 3,
@@ -291,20 +299,25 @@
                 "endBorderColor"     : "blueButtonBorder",
                 "focusedBorderColor" : "blueButtonBorder",
                 "focusColor"         : "focusBorder"
+            },
+            "Split" :
+            {
+                "default.iconColor"      : "labelInfo",
+                "default.separatorColor" : "separator"
             }
         },
         "CheckBox" :
         {
             "background"   : "panel",
             "foreground"   : "label",
-            "disabledText" : "labelInactive",
+            "disabledText" : "labelDisabled",
             "select"       : "focusBackground"
         },
         "CheckBoxMenuItem" :
         {
-            "foreground"                     : "mnemonicNumber",
+            "foreground"                     : "mnemonicNum",
             "background"                     : "panelMenu",
-            "disabledForeground"             : "labelInactive",
+            "disabledForeground"             : "labelDisabled",
             "disabledBackground"             : "panelMenu",
             "acceleratorSelectionForeground" : "labelHotkey",
             "acceleratorForeground"          : "labelHotkey"
@@ -340,13 +353,13 @@
         {
             "foreground"             : "label",
             "modifiedItemForeground" : "labelChanged",
-            "disabledForeground"     : "labelInactive",
+            "disabledForeground"     : "labelDisabled",
             "background"             : "panelMenu",
             "nonEditableBackground"  : "panelLit",
             "ArrowButton" :
             {
                 "iconColor"             : "label",
-                "disabledIconColor"     : "labelInactive",
+                "disabledIconColor"     : "labelDisabled",
 
                 "background"            : "panel",
                 "nonEditableBackground" : "panel"
@@ -391,7 +404,7 @@
             "Variables" :
             {
                 "changedValueForeground"         : "labelChanged",
-                "collectingDataForeground"       : "labelInactive",
+                "collectingDataForeground"       : "labelDisabled",
                 "errorMessageForeground"         : "labelError",
                 "evaluatingExpressionForeground" : "labelSuccess",
                 "exceptionForeground"            : "labelMatch",
@@ -410,10 +423,9 @@
         },
         "DragAndDrop" :
         {
-            "areaBackground"  : "dropArea",
-            "areaBorderColor" : "dropBorder",
-            "areaForeground"  : "dropForeground",
-            "borderColor"     : "dropBorder"
+            "areaBackground" : "dropArea",
+            "areaForeground" : "dropForeground",
+            "borderColor"    : "dropBorder"
         },
         "Editor" :
         {
@@ -426,7 +438,7 @@
             "foreground"         : "label",
             "background"         : "panel",
             "caretForeground"    : "caret",
-            "inactiveForeground" : "labelInactive",
+            "inactiveForeground" : "labelDisabled",
             "inactiveBackground" : "panel"
         },
         "EditorTabs" :
@@ -460,6 +472,13 @@
             "infoForeground"     : "labelInfo",
             "lineSeparatorColor" : "separator"
         },
+        "IconBadge" :
+        {
+            "infoBackground"    : "infoBackground",
+            "successBackground" : "successBackground",
+            "warningBackground" : "warningBackground",
+            "errorBackground"   : "errorBackground"
+        },
         "InformationHint" :
         {
             "borderColor" : "infoBorder"
@@ -472,8 +491,8 @@
         {
             "background"         : "panel",
             "foreground"         : "label",
-            "disabledText"       : "labelInactive",
-            "disabledForeground" : "labelInactive",
+            "disabledText"       : "labelDisabled",
+            "disabledForeground" : "labelDisabled",
             "selectedForeground" : "textSelected",
             "infoForeground"     : "labelInfo",
             "errorForeground"    : "labelError",
@@ -482,13 +501,11 @@
         "Lesson" :
         {
             "shortcutBackground"   : "mnemonicKey",
-            "stepNumberForeground" : "mnemonicNumber",
-            "Tooltip" :
+            "stepNumberForeground" : "mnemonicNum",
+            "Badge" :
             {
-                "foreground"           : "labelInfo",
-                "background"           : "panelMenu",
-                "stepNumberForeground" : "mnemonicNumber",
-                "spanBackground"       : "mnemonicKey"
+                "newLessonBackground" : "blueButton",
+                "newLessonForeground" : "text"
             }
         },
         "Link" :
@@ -504,10 +521,11 @@
             "foreground"                  : "label",
             "background"                  : "panelDim",
             "hoverBackground"             : "hoverAlt",
+            "hoverInactiveBackground"     : "hoverAlt",
             "dropLineColor"               : "dropBorder",
             "selectionForeground"         : "textSelected",
             "selectionBackground"         : "selection",
-            "selectionInactiveForeground" : "labelInactive",
+            "selectionInactiveForeground" : "label",
             "selectionInactiveBackground" : "selectionInactive"
         },
         "MemoryIndicator" :
@@ -519,11 +537,14 @@
         {
             "foreground"                     : "labelMenu",
             "background"                     : "panelMenu",
-            "disabledForeground"             : "labelInactive",
+
+            "disabledForeground"             : "labelDisabled",
             "disabledBackground"             : "panelMenu",
             "selectionForeground"            : "textSelected",
+
             "separatorColor"                 : "separator",
             "borderColor"                    : "borderMenu",
+
             "acceleratorForeground"          : "labelHotkey",
             "acceleratorSelectionForeground" : "labelHotkey"
         },
@@ -531,7 +552,7 @@
         {
             "foreground"          : "labelMenu",
 
-            "disabledForeground"  : "labelInactive",
+            "disabledForeground"  : "labelDisabled",
             "disabledBackground"  : "panelMenu",
 
             "selectionForeground" : "textSelected",
@@ -547,7 +568,7 @@
             "foreground"            : "labelMenu",
             "background"            : "panelMenu",
 
-            "disabledForeground"    : "labelInactive",
+            "disabledForeground"    : "labelDisabled",
             "disabledBackground"    : "panelMenu",
 
             "selectionForeground"   : "textSelected",
@@ -573,7 +594,7 @@
             {
                 "foreground"       : "label",
                 "background"       : "button",
-                "innerBorderColor" : "#0000"
+                "innerBorderColor" : "invisible"
             },
 
             "ToolWindow" :
@@ -600,14 +621,15 @@
         "Panel" :
         {
             "foreground" : "label",
-            "background" : "panel"
+            "background" : "panel",
+            "mouseShortcutBackground" : "panelTools"
         },
         "ParameterInfo" :
         {
             "foreground"                 : "label",
             "infoForeground"             : "labelInfo",
             "currentParameterForeground" : "caret",
-            "disabledForeground"         : "labelInactive",
+            "disabledForeground"         : "labelDisabled",
 
             "background"                 : "panelMenu",
             "currentOverloadBackground"  : "selectionAlt",
@@ -619,7 +641,7 @@
         {
             "foreground"         : "label",
             "caretForeground"    : "caret",
-            "inactiveForeground" : "labelInactive",
+            "inactiveForeground" : "labelDisabled",
             "background"         : "panelLit"
         },
         "Plugins" :
@@ -635,12 +657,11 @@
             "SectionHeader" :
             {
                 "foreground" : "label",
-                "background" :  "panelLit"
+                "background" : "panelLit"
             },
             "SearchField" :
             {
-                "background"  : "panelDark",
-                "borderColor" : "inputDim"
+                "background" : "panelDark"
             },
             "Button" :
             {
@@ -718,8 +739,36 @@
         "RadioButton" :
         {
             "foreground"   : "label",
-            "disabledText" : "labelInactive",
+            "disabledText" : "labelDisabled",
             "background"   : "panel"
+        },
+        "Review" :
+        {
+            "Branch" :
+            {
+                "Background"       : "infoBackground",
+                "Background.Hover" : "hoverAlt"
+            },
+            "ChatItem" :
+            {
+                "BubblePanel.Border" : "successBorder"
+            },
+            "MetaInfo" :
+            {
+                "StatusLine.Blue"   : "infoBorder",
+                "StatusLine.Gray"   : "buttonBorder",
+                "StatusLine.Green"  : "successBorder",
+                "StatusLine.Orange" : "warningBorder"
+            },
+            "State" :
+            {
+                "Background" : "state",
+                "Foreground" : "label"
+            },
+            "Timeline" :
+            {
+                "Thread.Diff.AnchorLine" : "markedBackground"
+            }
         },
         "ScrollBar" :
         {
@@ -778,12 +827,14 @@
             },
             "List" :
             {
+                "settingsBackground"  : "panelMenu",
                 "separatorForeground" : "label",
                 "separatorColor"      : "separator"
             }
         },
         "SearchField" :
         {
+            "errorForeground" : "labelError",
             "errorBackground" : "errorBackground"
         },
         "SearchMatch" :
@@ -832,8 +883,11 @@
         },
         "StatusBar" :
         {
-            "borderColor"     : "inputDim",
-            "hoverBackground" : "hoverAlt"
+            "borderColor" : "inputDim",
+            "background"  : "#334466",
+            "Widget": {
+                "hoverBackground": "hoverAlt"
+            }
         },
         "TabbedPane" :
         {
@@ -874,21 +928,21 @@
             "foreground"         : "label",
             "caretForeground"    : "caret",
             "inactiveBackground" : "panel",
-            "inactiveForeground" : "labelInactive"
+            "inactiveForeground" : "labelDisabled"
         },
         "TextField" :
         {
             "foreground"         : "label",
             "background"         : "panelLit",
             "caretForeground"    : "caret",
-            "inactiveForeground" : "labelInactive"
+            "inactiveForeground" : "labelDisabled"
         },
         "TextPane" :
         {
             "foreground"         : "label",
             "background"         : "panelLit",
             "caretForeground"    : "caret",
-            "inactiveForeground" : "labelInactive",
+            "inactiveForeground" : "labelDisabled",
             "inactiveBackground" : "panel"
         },
         "TitlePane" :
@@ -905,13 +959,12 @@
         },
         "Tree" :
         {
-            "paintLines"      : true,
+            "paintLines"             : true,
 
-            "hash"            : "treeLine",
-            "foreground"      : "label",
-            "background"      : "panelDim",
-            "hoverBackground" : "hoverAlt",
-
+            "hash"                   : "treeLine",
+            "foreground"             : "label",
+            "background"             : "panelDim",
+            "hoverBackground"        : "hoverAlt",
             "errorForeground"        : "labelError",
             "modifiedItemForeground" : "labelChanged"
         },
@@ -931,6 +984,8 @@
             "foreground"         : "label",
             "infoForeground"     : "labelInfo",
             "shortcutForeground" : "labelHotkey",
+            "linkForeground"     : "link",
+
             "background"         : "panelMenu",
             "borderColor"        : "borderMenu",
 
@@ -996,7 +1051,7 @@
             {
                 "hoveredBackground"       : "hoverAlt",
                 "unmatchedForeground"     : "warningBackground",
-                "currentBranchBackground" : "errorBackground"
+                "currentBranchBackground" : "fileGreen"
             }
         },
         "WelcomeScreen" :

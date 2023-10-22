@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>ent.brainstorm.galizur.theme</id>
     <name>Galizur Theme</name>
-    <version>1.2.2</version>
+    <version>232.2.0</version>
     <vendor email="razielanarki@semmi.se" url="https://github.com/razielanarki">Raziel Anarki</vendor>
 
     <description><![CDATA[
@@ -74,7 +74,14 @@
 
     <change-notes><![CDATA[
 
-<h3>version 1.2.2 (latest)</h3>
+<h3>version 232.2.0 (latest)</h3>
+<ul>
+    <li>Update UI theme to support 𝗜𝗗𝗘𝗔 𝟮𝟬𝟮𝟯.𝟮</li>
+    <li>Updated versioning scheme to <code>IdeaMajor.IdeaMinor</code>.<code>themeRevison</code>, to match IDE version </li>
+    <li>misc fixes and tweaks</li>
+</ul>
+
+<h3>version 1.2.2</h3>
 <ul>
     <li>Fixed the vertical editor scrollbar track transparency</li>
 </ul>
@@ -109,7 +116,7 @@
 
     ]]></change-notes>
 
-    <idea-version since-build="212.0" />
+    <idea-version since-build="232.2" />
 
     <depends>com.intellij.modules.lang</depends>
     <depends>com.intellij.modules.platform</depends>

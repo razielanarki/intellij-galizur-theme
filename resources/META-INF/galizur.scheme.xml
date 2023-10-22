@@ -2,8 +2,8 @@
   <metaInfo>
     <property name="created">2021-09-09T11:11:11</property>
     <property name="ide">idea</property>
-    <property name="ideVersion">2021.2.5080.92</property>
-    <property name="modified">2021-09-09T11:11:11</property>
+    <property name="ideVersion">2023.2.10072.27</property>
+    <property name="modified">2023-10-20T11:11:11</property>
   </metaInfo>
   <colors>
     <option name="ADDED_LINES_COLOR" value="447755" />
@@ -12,7 +12,7 @@
     <option name="CARET_ROW_COLOR" value="2e3136" />
     <option name="DELETED_LINES_COLOR" value="773344" />
     <option name="DIFF_SEPARATORS_BACKGROUND" value="222333" />
-    <option name="DOCUMENTATION_COLOR" value="33344477" />
+    <option name="DOCUMENTATION_COLOR" value="333444" />
     <option name="DOC_COMMENT_GUIDE" value="224433" />
     <option name="DOC_COMMENT_LINK" value="3399aa" />
     <option name="ERROR_HINT" value="551122" />
