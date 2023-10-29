@@ -2,8 +2,8 @@
   <metaInfo>
     <property name="created">2021-09-09T11:11:11</property>
     <property name="ide">idea</property>
-    <property name="ideVersion">2023.2.10072.27</property>
-    <property name="modified">2023-10-20T11:11:11</property>
+    <property name="ideVersion">2023.2.4.0.0</property>
+    <property name="modified">2023-10-28T01:23:45</property>
   </metaInfo>
   <colors>
     <option name="ADDED_LINES_COLOR" value="447755" />
@@ -54,7 +54,7 @@
     <option name="IGNORED_MODIFIED_LINES_BORDER_COLOR" value="335577" />
     <option name="IMAGES_BACKGROUND" value="313337" />
     <option name="IMAGES_GRID_LINE_COLOR" value="778899aa" />
-    <option name="IMAGES_WHITE_CELL_COLOR" value="333333" />
+    <option name="IMAGES_WHITE_CELL_COLOR" value="2a2c2e" />
     <option name="INDENT_GUIDE" value="313337" />
     <option name="INFORMATION_HINT" value="113355" />
     <option name="INLINE_REFACTORING_SETTINGS_DEFAULT" value="55555577" />
@@ -1069,6 +1069,14 @@
     </option>
     <option name="HTML_ATTRIBUTE_NAME" baseAttributes="DEFAULT_ATTRIBUTE" />
     <option name="HTML_ATTRIBUTE_VALUE" baseAttributes="DEFAULT_STRING" />
+    <option name="HTML_CODE">
+      <value />
+    </option>
+    <option name="HTML_CUSTOM_TAG_NAME">
+      <value>
+        <option name="FOREGROUND" value="2299cc" />
+      </value>
+    </option>
     <option name="HTML_ENTITY_REFERENCE" baseAttributes="DEFAULT_ENTITY" />
     <option name="HTML_TAG" baseAttributes="DEFAULT_TAG" />
     <option name="HTML_TAG_NAME" baseAttributes="DEFAULT_KEYWORD" />
@@ -2196,7 +2204,7 @@
         <option name="FOREGROUND" value="2288cc" />
       </value>
     </option>
-    <option name="XPATH.XPATH_VARIABLE" baseAttributes="" />
+    <option name="XPATH.XPATH_VARIABLE" baseAttributes="DEFAULT_LOCAL_VARIABLE" />
     <option name="YAML_ANCHOR" baseAttributes="DEFAULT_IDENTIFIER" />
     <option name="YAML_SCALAR_LIST">
       <value>
@@ -2249,7 +2257,6 @@
       </value>
     </option>
   </attributes>
-  <option name="FONT_SCALE" value="1.0" />
   <option name="LINE_SPACING" value="1.2" />
   <option name="EDITOR_FONT_SIZE" value="17" />
   <option name="EDITOR_FONT_NAME" value="DejaVu Sans Mono" />

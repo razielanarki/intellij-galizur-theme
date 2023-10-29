@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>ent.brainstorm.galizur.theme</id>
     <name>Galizur Theme</name>
-    <version>232.2.0</version>
+    <version>232.2.1</version>
     <vendor email="razielanarki@semmi.se" url="https://github.com/razielanarki">Raziel Anarki</vendor>
 
     <description><![CDATA[
@@ -74,7 +74,12 @@
 
     <change-notes><![CDATA[
 
-<h3>version 232.2.0 (latest)</h3>
+<h3>version 232.2.1 (latest)</h3>
+<ul>
+    <li>bugfixes and small tweaks</li>
+</ul>
+
+<h3>version 232.2.0</h3>
 <ul>
     <li>Update UI theme to support 𝗜𝗗𝗘𝗔 𝟮𝟬𝟮𝟯.𝟮</li>
     <li>Updated versioning scheme to <code>IdeaMajor.IdeaMinor</code>.<code>themeRevison</code>, to match IDE version </li>
@@ -123,7 +128,7 @@
 
     <extensions defaultExtensionNs="com.intellij">
         <themeProvider id="b659eb65-4df9-4408-9d24-4284a3039cf3" path="/META-INF/galizur.theme.json" />
-        <bundledColorScheme path="/META-INF/galizur.scheme" />
+        <bundledColorScheme id="2a97d777-4fee-4882-8ac6-0c12f777b694" path="/META-INF/galizur.scheme" />
     </extensions>
 
 </idea-plugin>

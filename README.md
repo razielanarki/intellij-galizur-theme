@@ -12,7 +12,10 @@ The included terminal color scheme is available from&emsp;&raquo;&ensp;[mbadolat
 
 ## Version History
 
-- ### version 232.2.0 (latest)
+- ### version 232.2.1 (latest)
+  - bugfixes and small tweaks
+ 
+- ### version 232.2.0
   - Update UI theme to support 𝗜𝗗𝗘𝗔 𝟮𝟬𝟮𝟯.𝟮
   - Updated versioning scheme to `IdeaMajor.IdeaMinor`.`themeRevison`, to match 𝗜𝗗𝗘 version 
   - misc fixes and tweaks

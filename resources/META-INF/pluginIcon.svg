@@ -1,11 +1,19 @@
-<svg viewBox="-20 -20 40 40" width="32" height="32" version="1.2"
+<?xml version="1.0" encoding="utf-8" ?>
+<svg viewBox="-20 -20 40 40" width="40" height="40"
     xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink"
+    overflow="visible"
 >
     <defs>
         <rect x="-20" y="-20" width="40" height="40" id="fill" />
         <circle r="18" id="base" />
-        <circle fill="#fff" r="17" id="eyelid"/>
+        <circle fill="#fff" r="17" id="eyelid">
+            <animateTransform attributeName="transform" type="scale"
+                values="1 1;  1 1; 1.5 0;  1 1;  1 1; 1.5 0;  1 1;  1 1; 1.5 0;  1 1"
+                keyTimes="0; 0.32;  0.33; 0.35; 0.76;  0.77; 0.78; 0.97;  0.99; 1.00" dur="7.37"
+                repeatCount="indefinite">
+            </animateTransform>
+        </circle>
         <mask id="lid">
             <mask id="clid"><use xlink:href="#eyelid" y="-12" /></mask>
             <use xlink:href="#eyelid" y="6" mask="url(#clid)" />
@@ -37,7 +45,7 @@
         </mask>
     </defs>
 
-    <circle r="19" fill="#201" opacity="0.6" />
+    <circle r="19" stroke-width="" fill="#201" opacity="0.7" />
     <g mask="url(#iyri)">
         <use xlink:href="#fill" fill="#e82" />
         <use xlink:href="#fill" fill="#303" mask="url(#sham)" />
@@ -51,17 +59,37 @@
             <use xlink:href="#fill" y=" 20" fill="#fc7" opacity="0.6" />
             <g mask="url(#eye)">
                 <use xlink:href="#base" fill="#fff" />
-                <use xlink:href="#fill" fill="#f39" mask="url(#ball)" />
-                <ellipse rx="13" ry="11" fill="none" stroke="#d38" />
-                <g transform="rotate(37)" mask="url(#miri)" id="look">
-                    <use xlink:href="#iris" fill="#3a7" />
-                    <ellipse         cy="-6.66" rx="2.73" ry="3.73" fill="#fff" opacity="0.5" />
-                    <ellipse cx="-2" cy="-3.73" rx="7.37" ry="3.73" fill="#7fc" opacity="0.2" />
-                    <ellipse cx=" 2" cy="-3.73" rx="7.37" ry="3.73" fill="#7fc" opacity="0.2" />
-                    <circle             r="4.10"         fill="#123" />
-                    <circle  cy="-0.25" r="3.5"          fill="#def" opacity=".07" />
-                    <ellipse cy="-3.1" rx="0.8" ry="0.4" fill="#fff" />
-                    <ellipse cy="-2"   rx="0.4" ry="0.6" fill="#fff" opacity="0.7" />
+                <g>
+                    <use xlink:href="#fill" fill="#f39" mask="url(#ball)" />
+                    <ellipse rx="13" ry="11" fill="none" stroke="#d38" />
+                </g>
+                <g  transform="rotate(37)" id="look">
+                    <g mask="url(#miri)">
+                        <animateTransform attributeName="transform" type="translate" calcMode="discrete"
+                            values="0 0; -4 -1; 1 4; 0 0; 3 -3; 0 0"
+                            keyTimes="0;   0.3; 0.5; 0.7;  0.8;   1"
+                            dur="6.66" repeatCount="indefinite" />
+                        <use xlink:href="#iris" fill="#3a7" />
+                        <ellipse         cy="-6.66" rx="2.73" ry="3.73" fill="#fff" opacity="0.5" />
+                        <ellipse cx="-2" cy="-3.73" rx="7.37" ry="3.73" fill="#7fc" opacity="0.2" />
+                        <ellipse cx=" 2" cy="-3.73" rx="7.37" ry="3.73" fill="#7fc" opacity="0.2" />
+                        <g id="pup">
+                            <animateTransform attributeName="transform" type="translate" calcMode="discrete"
+                                values="  0 0;-1 -.25;.25  1; 0 0;.75 -.75; 0 0"
+                                keyTimes="0.0;    0.3;   0.5; 0.7;     0.8;   1"
+                                dur="6.66" repeatCount="indefinite" />
+                            <g>
+                                <animateTransform attributeName="transform" type="scale"
+                                    values=" .9; 1;  1; .8;  1; .9;  1; .9;  1; .8; .9"
+                                    keyTimes="0;.1; .3;.32; .5;.52; .7;.72; .8;.82; 1"
+                                    dur="6.66" repeatCount="indefinite" />
+                                <circle             r="4.10"         fill="#123" />
+                                <circle  cy="-0.25" r="3.5"          fill="#def" opacity=".07" />
+                                <ellipse cy="-3.1" rx="0.8" ry="0.4" fill="#fff" />
+                                <ellipse cy="-2"   rx="0.4" ry="0.6" fill="#fff" opacity="0.7" />
+                            </g>
+                        </g>
+                    </g>
                 </g>
                 <use xlink:href="#fill" fill="#102" mask="url(#sham)" />
             </g>

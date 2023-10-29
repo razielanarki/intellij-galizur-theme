@@ -2,6 +2,7 @@
     "name"         : "Galizur",
     "dark"         : true,
     "author"       : "Raziel Anarki <razielanarki@semmi.se>",
+    "parentTheme"  : "Darcula",
     "editorScheme" : "/META-INF/galizur.scheme.xml",
     "icons" :
     {
